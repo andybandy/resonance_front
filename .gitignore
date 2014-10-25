@@ -1,0 +1,8 @@
+*.swo
+*.swp
+node_modules
+dev
+prod
+
+js/vendor/**/*.js
+js/templates.js
