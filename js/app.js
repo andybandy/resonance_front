@@ -27,7 +27,7 @@
           if (signals[0].time + i*step > signals[c + 1].time) {
             c++;
           }
-          var value = interpolate(signals[c], signals[c + 1], i + signals[0].time);
+          var value = interpolate(signals[c], signals[c + 1], i*step + signals[0].time);
           self.ds[ind].push({time: i, rate: value});
         }
         console.log(JSON.stringify(self.ds[ind]));
