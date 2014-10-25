@@ -1,6 +1,7 @@
 *.swo
 *.swp
 node_modules
+bower_components
 dev
 prod
 

@@ -10,8 +10,7 @@ var paths = {
   vendorsSource: [
     'node_modules/angular/lib/angular.min.js',
     'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/lodash/dist/lodash.underscore.min.js',
-    'node_modules/firebase/lib/firebase-web.js'
+    'node_modules/lodash/dist/lodash.underscore.min.js'
   ],
   vendors: 'js/vendor/**/*.js',
   styles: 'scss/**/*.scss',
