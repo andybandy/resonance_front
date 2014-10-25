@@ -31,6 +31,8 @@
           self.ds[ind].push({time: i, rate: value});
         }
         console.log(JSON.stringify(self.ds[ind]));
+        var canvas = $('.canvas[canvas' + ind + ']');
+        var context = canvas.getContext('2d');
       });
     });
   }]);
