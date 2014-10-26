@@ -1,9 +1,5 @@
 <div ng-controller="DevicesController as devices" class="diveces">
   <div ng-repeat="d in devices.ds" class="device">
-    <svg width="450" height="200">
-        <!--<rect x="{{p.time*9}}" y="200" width="9"
-        height="{{p.rate}}" style="fill:blue"/>-->
-    </svg>
-    <canvas class="canvas" id="{{'canvas' + $index}}"></canvas>
+    <canvas class="canvas" width="450" height="200" id="{{'canvas' + $index}}"></canvas>
   </div>
 </div>
