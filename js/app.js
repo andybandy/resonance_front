@@ -22,6 +22,7 @@
         var signals = _.sortBy(unsortedSignals, function(n) {
           return n.time;
         });
+        signals = signals.slice(Math.max(signals.length - steps, 1));
         var min = signals[0].time;
         var max = signals[signals.length - 1].time;
         var step = (max - min)/steps;
@@ -34,6 +35,7 @@
           self.ds[ind].push({time: i, rate: value});
         }
         console.log(JSON.stringify(self.ds[ind]));
+        console.log(signals.length);
         /*
         var canvas = $('#canvas' + ind);
         var context = canvas.getContext('2d');
